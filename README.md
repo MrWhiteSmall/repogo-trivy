@@ -2,7 +2,7 @@
 
 这是 RepoGo 为 [Trivy](https://github.com/aquasecurity/trivy) v0.76.1 编写的中文练习包装，不是原项目，也不是完整界面汉化。凭据是程序访问服务时用的密码或令牌；这次全部使用无效假数据。
 
-我们在 macOS Apple Silicon 实跑了“假样例命中 1 项 → 更换样例 → 复扫 0 项”。它证明自定义练习规则、报告和退出码流程可用，不证明能够发现所有真实泄漏。
+我们在 macOS Apple Silicon 实跑了交付入口：分别扫描两份预置假样例，before 命中 1 项，after 不含假标记、发现 0 项。入口不会自动修改你的代码，也没有实现真实环境变量注入。这个对照证明自定义练习规则、报告和退出码流程可用，不证明能够发现所有真实泄漏。
 
 ![练习目标](images/01-cover.png)
 
@@ -26,4 +26,4 @@
 
 上游原地址：https://github.com/aquasecurity/trivy
 
-RepoGo 私有交付仓库：https://gitee.com/lushengjie/repogo-trivy ，需要单独的仓库访问权限；星球附件可独立使用，不依赖能访问该仓库。
+RepoGo 公开交付仓库：https://gitee.com/lushengjie/repogo-trivy 。该仓库已于 2026-10-30 公开；星球附件也可独立解压使用。
